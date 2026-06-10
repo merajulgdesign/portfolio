@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- SolaimanLipi Font -->
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="en">MyPortfolio</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog-redirect.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting en">Hello, I'm</p>
+                <h1 class="hero-name en">Merajul Islam</h1>
+                <h1 class="hero-name bn">মিরাজুল ইসলাম</h1>
+                <div class="typing-container">
+                    <span class="typing-text en"></span>
+                    <span class="typing-text bn"></span>
+                </div>
+                <p class="hero-description en">
+                    Creative Web Developer & Designer crafting beautiful digital experiences
+                </p>
+                <p class="hero-description bn">
+                    ক্রিয়েটিভ ওয়েব ডেভেলপার ও ডিজাইনার, সুন্দর ডিজিটাল অভিজ্ঞতা তৈরি করি
+                </p>
+                <div class="hero-buttons">
+                    <a href="portfolio.html" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="image/sit.png" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title en">What I Do</h2>
+            <h2 class="section-title bn">আমি যা করি</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-code feature-icon"></i>
+                    <h3 class="en">Web Development</h3>
+                    <p class="en">Building responsive and dynamic websites</p>
+                    <p class="bn">রেসপনসিভ ও ডাইনামিক ওয়েবসাইট তৈরি</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-paint-brush feature-icon"></i>
+                    <h3 class="en">UI/UX Design</h3>
+                    <p class="en">Creating beautiful user interfaces</p>
+                    <p class="bn">সুন্দর ইউজার ইন্টারফেস ডিজাইন</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <h3 class="en">App Development</h3>
+                    <p class="en">Cross-platform mobile applications</p>
+                    <p class="bn">ক্রস-প্ল্যাটফর্ম মোবাইল অ্যাপ</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-blog feature-icon"></i>
+                    <h3 class="en">Blogging</h3>
+                    <p class="en">Writing tech & lifestyle content</p>
+                    <p class="bn">টেক ও লাইফস্টাইল কন্টেন্ট রাইটিং</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="latest-blog">
+        <div class="container">
+            <h2 class="section-title en">Latest Blog Posts</h2>
+            <h2 class="section-title bn">সর্বশেষ ব্লগ পোস্ট</h2>
+            <div class="blog-preview-grid" id="blogPreview">
+                <!-- Blogspot posts will be loaded here via API -->
+            </div>
+            <div class="center-btn">
+                <a href="blog-redirect.html" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Visit My Blog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="en">MyPortfolio</h3>
+                    <p class="en">Creating digital magic since 2020</p>
+                    <p class="bn">২০২০ সাল থেকে ডিজিটাল ম্যাজিক তৈরি করছি</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="en">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog-redirect.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="en">Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> your@email.com</p>
+                    <p><i class="fas fa-phone"></i> +880 1XXX-XXXXXX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+                <p class="bn">সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
